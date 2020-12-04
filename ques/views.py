@@ -75,7 +75,8 @@ ship = [
 
 def home(request):
     global count
-    count = [0 for x in count]
+    count = [0] * 5
+    print(count)
     data = {
         'questions': questionsList
     }
