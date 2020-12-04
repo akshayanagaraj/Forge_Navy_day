@@ -25,7 +25,7 @@ SECRET_KEY = 'kq9-+8imcze@2*fk!d1!0$3zexlqbzo@ldmnlyf-@6l2gehza4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['magarmach-navy-day.herokuapp.com']
 
 
 # Application definition
