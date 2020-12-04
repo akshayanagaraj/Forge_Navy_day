@@ -4,16 +4,16 @@ from django.contrib import messages
 
 questionsList = [
     {
-<<<<<<< HEAD
+
         'index': 0,
-=======
+
         'index':0,
->>>>>>> e3406deb98bfead647438876f2fbc86acf2046aa
+
         'question': 'Q1. Where would you go on vacation?',
         'choice': ['a)Beach', 'b)Mountain', 'c)City', 'd)Theme Park', 'e)Forest'],
 
     },
-<<<<<<< HEAD
+
     {'index': 1,
      'question': 'Q2. where would you like to live?',
      'choice': ['a)Mansion', 'b)Apartment', 'c)Penthouse', 'd)Cabin', 'e)Beach House']
@@ -43,7 +43,7 @@ questionsList = [
     {'index': 6,
      'question': 'Q7)What is your favourite series?',
      'choice': ['a)The Crown', 'b)The Americans', 'c)Brooklyn 99', 'd)Stranger Things', 'e)Chernobyl']
-=======
+
     {   'index':1,
         'question': 'Q2. where would you like to live?',
         'choice': ['a)Mansion', 'b)Apartment', 'c)Penthouse', 'd)Cabin', 'e)Beach House']
@@ -72,7 +72,7 @@ questionsList = [
     {'index':6,
         'question': 'Q7)What is your favourite series?',
         'choice': ['a)The Crown', 'b)The Americans', 'c)Brooklyn 99', 'd)Stranger Things', 'e)Chernobyl']
->>>>>>> e3406deb98bfead647438876f2fbc86acf2046aa
+
 
      }
 
@@ -81,7 +81,7 @@ questionsList = [
 count = [0] * 5
 ship = [
     {
-<<<<<<< HEAD
+
         'name': 'INS Vikramaditya:',
         'desc': 'Greetings your highness, just like INS Vikramaditya is the peerless crown jewel of the Indio-Pacific, so are you in your life. You are the centre of attention and all people seem to revolve around you. You are seemingly unstoppable and ability too single-handedly change the balance of power.',
         'img': 'https://economictimes.indiatimes.com/thumb/msid-55372917,width-1200,height-900,resizemode-4,imgsize-50822/news/defence/ins-vikramaditya-ready-to-go-back-to-sea-after-refit-works.jpg?from=mdr',
@@ -101,7 +101,7 @@ ship = [
         'name': 'INS Kolkata:',
         'desc': 'You are an unstoppable juggernaut, you slow down for no one and constantly conquer all obstacles within your path. Your plan of attack is often one word, attack. Aggression is your first, second and only nature. You run into the fray, and like to get up and close to your problems. You don’t solve problems, problems seem to cease their existence once you’re done with them.',
         'img': 'https://miro.medium.com/max/752/1*en0yGb9vCFIeMFgjLmxdcQ.jpeg',
-=======
+
         'name' : 'INS Vikramaditya:',
         'desc' : 'Greetings your highness, just like INS Vikramaditya is the peerless crown jewel of the Indio-Pacific, so are you in your life. You are the centre of attention and all people seem to revolve around you. You are seemingly unstoppable and ability too single-handedly change the balance of power.',
         'img'  : 'https://economictimes.indiatimes.com/thumb/msid-55372917,width-1200,height-900,resizemode-4,imgsize-50822/news/defence/ins-vikramaditya-ready-to-go-back-to-sea-after-refit-works.jpg?from=mdr',
@@ -121,7 +121,7 @@ ship = [
         'name' : 'INS Kolkata:',
         'desc' : 'You are an unstoppable juggernaut, you slow down for no one and constantly conquer all obstacles within your path. Your plan of attack is often one word, attack. Aggression is your first, second and only nature. You run into the fray, and like to get up and close to your problems. You don’t solve problems, problems seem to cease their existence once you’re done with them.',
         'img'  : 'https://miro.medium.com/max/752/1*en0yGb9vCFIeMFgjLmxdcQ.jpeg',
->>>>>>> e3406deb98bfead647438876f2fbc86acf2046aa
+
     },
 ]
 
@@ -133,7 +133,7 @@ def home(request):
         'questions': questionsList
     }
     if request.method == "POST":
-<<<<<<< HEAD
+
 
         try:
 
@@ -146,7 +146,7 @@ def home(request):
 
 
 
-=======
+
         
         try:
             
@@ -159,7 +159,6 @@ def home(request):
 
             return redirect('ans-url')
 
->>>>>>> e3406deb98bfead647438876f2fbc86acf2046aa
     return render(request, template_name="ques/home.html", context=data)
 
 
@@ -168,8 +167,8 @@ def ans(request):
     data = {
         'ship': ship[output]
     }
-<<<<<<< HEAD
+
     return render(request, template_name='ques/ans.html', context=data)
-=======
+
     return render(request, template_name='ques/ans.html',context=data)
->>>>>>> e3406deb98bfead647438876f2fbc86acf2046aa
+
